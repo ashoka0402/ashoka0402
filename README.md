@@ -1,4 +1,4 @@
-![Matrix SVG](https://raw.githubusercontent.com/rodrigograca31/rodrigograca31/master/matrix.svg)
+
 <div align="center">
 
 # 👋 Hi, I'm Harshit Singh
@@ -16,7 +16,7 @@
 </div>
 
 ---
-
+![Matrix SVG](https://raw.githubusercontent.com/rodrigograca31/rodrigograca31/master/matrix.svg)
 ## 🎯 About Me
 
 ```python
