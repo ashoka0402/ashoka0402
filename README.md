@@ -75,7 +75,7 @@ class HarshitSingh:
 ## 🚀 Featured Projects
 
 ### 🤖 [SaaS Automation Builder](https://github.com/ashoka0402) - Production AI Workflow Engine
-<img align="right" width="150" src="https://img.shields.io/badge/Status-Production-success?style=for-the-badge"/>
+<img align="right" width="150" src="https://img.shields.io/badge/Status-Active-blue?style=for-the-badge"/>
 
 **Event-driven multi-tenant automation platform with LLM-powered workflow generation**
 
@@ -93,7 +93,7 @@ class HarshitSingh:
 ---
 
 ### 🔧 [MiniGit](https://github.com/ashoka0402) - ML-Enhanced Version Control System
-<img align="right" width="150" src="https://img.shields.io/badge/Status-Active-blue?style=for-the-badge"/>
+<img align="right" width="150" src="https://img.shields.io/badge/Status-Production-success?style=for-the-badge"/>
 
 **Lightweight distributed VCS with AI-powered commit intelligence**
 
