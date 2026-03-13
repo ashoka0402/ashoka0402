@@ -64,7 +64,6 @@ class HarshitSingh:
 |:---|:---|
 | **Smart India Hackathon 2024** | 🥈 Finalist among 15,000+ teams nationwide |
 | **PAN-IIT Imagine Hackathon 2025** | 🥈 Finalist - Led cross-functional engineering team |
-| **CERN HSF Open Source** | 🔬 10+ merged PRs across 50K+ LOC scientific codebases |
 | **Competitive Programming** | 💻 Codeforces 1200+ • LeetCode 1600+ • Regular Contests |
 | **Production Systems** | ⚡ Built systems processing 250+ jobs/day with 99% uptime |
 
