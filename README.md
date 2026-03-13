@@ -3,7 +3,7 @@
 
 # 👋 Hi, I'm Harshit Singh
 
-### 🚀 AI/ML Engineer | Systems Architect | Open Source Contributor
+### AI/ML Engineer | Systems Architect | Open Source Contributor
 
 <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&pause=1000&color=00D9FF&center=true&vCenter=true&width=800&lines=Deep+Learning+%26+Computer+Vision+Enthusiast;Building+Production-Grade+ML+Systems;Distributed+Systems+%26+Microservices+Architect;Competitive+Programmer+%7C+Hackathon+Finalist" alt="Typing SVG" />
 
@@ -38,10 +38,10 @@ class HarshitSingh:
     
     def get_current_work(self):
         return [
-            "🔬 Contributing to CERN HSF scientific computing projects",
-            "🤖 Building LLM-powered automation systems",
-            "🧠 Researching advanced computer vision & NLP architectures",
-            "⚡ Designing high-performance distributed systems"
+            " Contributing to CERN HSF scientific computing projects",
+            " Building LLM-powered automation systems",
+            " Researching advanced computer vision & NLP architectures",
+            " Designing high-performance distributed systems"
         ]
     
     def get_expertise(self):
@@ -56,11 +56,11 @@ class HarshitSingh:
 
 ---
 
-## 🏆 Achievements & Recognition
+##  Achievements & Recognition
 
 <div align="center">
 
-| 🎖️ Achievement | 📊 Impact |
+|  Achievement |  Impact |
 |:---|:---|
 | **Smart India Hackathon 2024** | 🥈 Finalist among 15,000+ teams nationwide |
 | **PAN-IIT Imagine Hackathon 2025** | 🥈 Finalist - Led cross-functional engineering team |
@@ -78,11 +78,11 @@ class HarshitSingh:
 
 **Event-driven multi-tenant automation platform with LLM-powered workflow generation**
 
-- 🎯 Processes **250+ automated jobs per day** with p99 latency <100ms
-- 🧠 **LLM-assisted workflow creation** reducing manual setup time by 40%
-- 🔐 Multi-tenant RBAC with PostgreSQL isolation across 15+ organizations
-- ⚡ Fault-tolerant execution engine achieving **99% successful job completion**
-- 🏗️ Built with: `Next.js 14` `Bun` `Clerk Auth` `Neon Postgres` `OpenAI API` `Stripe`
+-  Processes **250+ automated jobs per day** with p99 latency <100ms
+-  **LLM-assisted workflow creation** reducing manual setup time by 40%
+-  Multi-tenant RBAC with PostgreSQL isolation across 15+ organizations
+-  Fault-tolerant execution engine achieving **99% successful job completion**
+-  Built with: `Next.js 14` `Bun` `Clerk Auth` `Neon Postgres` `OpenAI API` `Stripe`
 
 **Key ML Features:**
 - Natural language to workflow conversion using GPT-4
@@ -96,11 +96,11 @@ class HarshitSingh:
 
 **Lightweight distributed VCS with AI-powered commit intelligence**
 
-- 📦 Manages **20K+ objects** with O(1) SHA-1 hash lookups
-- 💾 Zlib compression achieving **~35% storage reduction** via content deduplication
-- 🌳 Commit DAG supporting efficient traversal over **6K+ commits**
-- 🤖 **LLM-powered commit summarization** reducing manual effort by 40%
-- 🛠️ Built with: `C++` `File Systems` `DAGs` `NLP` `OpenAI API`
+-  Manages **20K+ objects** with O(1) SHA-1 hash lookups
+-  Zlib compression achieving **~35% storage reduction** via content deduplication
+-  Commit DAG supporting efficient traversal over **6K+ commits**
+-  **LLM-powered commit summarization** reducing manual effort by 40%
+-  Built with: `C++` `File Systems` `DAGs` `NLP` `OpenAI API`
 
 **ML Integration:**
 - Automatic commit message generation from code diffs
@@ -109,16 +109,16 @@ class HarshitSingh:
 
 ---
 
-### ⚡ [Distributed Rate Limiter](https://github.com/ashoka0402) - High-Performance Traffic Control
+###  [Distributed Rate Limiter](https://github.com/ashoka0402) - High-Performance Traffic Control
 <img align="right" width="150" src="https://img.shields.io/badge/Status-Production-success?style=for-the-badge"/>
 
 **Redis-backed rate limiting system with ML-based anomaly detection**
 
-- 🚦 Enforces limits on **4K+ requests/minute** with O(1) token bucket validation
-- ⏱️ Deployed across 3 microservices with **p99 overhead <7ms**
-- 🛡️ Blocks **80%+ burst traffic** during DDoS-like spikes
-- 📊 **ML-powered anomaly detection** for traffic pattern analysis
-- 🏗️ Built with: `Node.js` `Redis` `Distributed Systems` `TensorFlow`
+-  Enforces limits on **4K+ requests/minute** with O(1) token bucket validation
+-  Deployed across 3 microservices with **p99 overhead <7ms**
+-  Blocks **80%+ burst traffic** during DDoS-like spikes
+-  **ML-powered anomaly detection** for traffic pattern analysis
+-  Built with: `Node.js` `Redis` `Distributed Systems` `TensorFlow`
 
 **Advanced Features:**
 - Real-time traffic pattern learning using time-series analysis
@@ -127,7 +127,7 @@ class HarshitSingh:
 
 ---
 
-## 🧠 AI/ML Expertise
+##  AI/ML Expertise
 
 <div align="center">
 
@@ -153,10 +153,10 @@ class HarshitSingh:
 
 ---
 
-## 💻 Tech Stack
+##  Tech Stack
 
 <details open>
-<summary><b>🔥 Languages</b></summary>
+<summary><b>Languages</b></summary>
 <br>
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
@@ -169,7 +169,7 @@ class HarshitSingh:
 </details>
 
 <details open>
-<summary><b>🌐 Backend & Systems</b></summary>
+<summary><b>Backend & Systems</b></summary>
 <br>
 <p align="center">
   <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />
@@ -196,7 +196,7 @@ class HarshitSingh:
 </details>
 
 <details open>
-<summary><b>🎨 Frontend & Tools</b></summary>
+<summary><b>Frontend & Tools</b></summary>
 <br>
 <p align="center">
   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
@@ -210,13 +210,13 @@ class HarshitSingh:
 
 ---
 
-## 🔬 Current Focus Areas
+##  Current Focus Areas
 
 <table align="center">
 <tr>
 <td align="center" width="50%">
 
-### 🧠 Deep Learning Research
+###  Deep Learning Research
 - Advanced transformer architectures
 - Computer vision for real-time systems
 - Neural architecture search (NAS)
@@ -226,7 +226,7 @@ class HarshitSingh:
 </td>
 <td align="center" width="50%">
 
-### ⚡ Production ML Systems
+###  Production ML Systems
 - LLM fine-tuning & deployment
 - Real-time inference optimization
 - MLOps pipeline automation
@@ -239,7 +239,7 @@ class HarshitSingh:
 
 ---
 
-## 📊 GitHub Analytics
+##  GitHub Analytics
 
 <div align="center">
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=ashoka0402&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=00D9FF&icon_color=00D9FF&text_color=FFFFFF"/>
@@ -256,7 +256,7 @@ class HarshitSingh:
 
 ---
 
-## 🏅 Coding Profiles & Achievements
+##  Coding Profiles & Achievements
 
 <div align="center">
 
@@ -270,62 +270,61 @@ class HarshitSingh:
 
 ---
 
-## 🎓 Education & Coursework
+##  Education & Coursework
 
 <div align="center">
 
-**🎓 B.Tech in Computer Science & Engineering** • *Expected 2027*  
+** B.Tech in Computer Science & Engineering** • *Expected 2027*  
 **Bharati Vidyapeeth (DU) College of Engineering, Pune** • **CGPA: 8.04/10**
 
 </div>
-
-**📚 Relevant Coursework:**
+** Relevant Coursework:**
 - Data Structures & Algorithms • Computer Networks • Operating Systems
 - Database Management Systems • Software Engineering • Machine Learning
 - Computer Vision • Natural Language Processing • Distributed Systems
 
 ---
 
-## 💼 Professional Experience
+##  Professional Experience
 
-### 🌍 Open Source Contributor – CERN HSF & GSoC-Affiliated Organizations
+###  Open Source Contributor – CERN HSF & GSoC-Affiliated Organizations
 **Remote** • *2025*
 
-- 🔬 Contributing to CERN's High-Energy Physics software stack using **C++ and Python**
-- 📝 **10+ reviewed pull requests** merged across 50K+ LOC scientific computing codebases
-- 🤝 Collaborating with international maintainers on performance optimization and feature development
-- ⚙️ Following CI/CD best practices with automated testing and code review workflows
-- 🎯 Focus areas: Scientific computing, distributed systems, and performance-critical algorithms
+-  Contributing to CERN's High-Energy Physics software stack using **C++ and Python**
+-  **10+ reviewed pull requests** merged across 50K+ LOC scientific computing codebases
+-  Collaborating with international maintainers on performance optimization and feature development
+-  Following CI/CD best practices with automated testing and code review workflows
+-  Focus areas: Scientific computing, distributed systems, and performance-critical algorithms
 
 ---
 
-## 🌟 What I'm Currently Working On
+##  What I'm Currently Working On
 
 ```javascript
 const currentProjects = {
   learning: [
-    "🔥 Advanced PyTorch techniques for production ML",
-    "🤖 Large Language Model fine-tuning & optimization",
-    "📱 React Native for cross-platform AI applications",
-    "🧪 Generative AI architectures (GANs, Diffusion Models)"
+    " Advanced PyTorch techniques for production ML",
+    " Large Language Model fine-tuning & optimization",
+    " React Native for cross-platform AI applications",
+    " Generative AI architectures (GANs, Diffusion Models)"
   ],
   building: [
-    "🎯 ISL (Indian Sign Language) Translation System using Computer Vision",
-    "⚡ Real-time object detection pipeline with YOLO & TensorRT",
-    "🧠 Custom transformer architecture for domain-specific NLP",
-    "🌐 Scalable microservices architecture with ML inference endpoints"
+    " ISL (Indian Sign Language) Translation System using Computer Vision",
+    " Real-time object detection pipeline with YOLO & TensorRT",
+    " Custom transformer architecture for domain-specific NLP",
+    " Scalable microservices architecture with ML inference endpoints"
   ],
   contributing: [
-    "🔬 CERN HSF scientific computing projects",
-    "💻 Open source ML libraries and frameworks",
-    "📚 Technical documentation for AI/ML tools"
+    " CERN HSF scientific computing projects",
+    " Open source ML libraries and frameworks",
+    " Technical documentation for AI/ML tools"
   ]
 };
 ```
 
 ---
 
-## 🎯 Highlighted Projects & Impact
+##  Highlighted Projects & Impact
 
 <div align="center">
 
@@ -340,7 +339,7 @@ const currentProjects = {
 
 ---
 
-## 🤝 Let's Connect & Collaborate
+##  Let's Connect & Collaborate
 
 <div align="center">
 
@@ -368,7 +367,7 @@ const currentProjects = {
 
 ---
 
-## 💡 Fun Facts
+##  Fun Facts
 
 <div align="center">
 
@@ -387,7 +386,7 @@ fun_facts = {
 
 ---
 
-## 🎮 GitHub Trophies
+##  GitHub Trophies
 
 <div align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=ashoka0402&theme=tokyonight&no-frame=true&no-bg=true&row=1&column=7" alt="GitHub Trophies" />
@@ -397,19 +396,19 @@ fun_facts = {
 
 <div align="center">
 
-### 💭 Quote I Live By
+###  Quote I Live By
 
 <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Random Dev Quote"/>
 
 ---
 
-### ⚡ Quick Stats
+###  Quick Stats
 
 <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ashoka0402&theme=tokyonight" alt="Profile Summary" />
 
 ---
 
-**🚀 "Building the future, one algorithm at a time"**
+** "Building the future, one algorithm at a time"**
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer&animation=twinkling" />
 
