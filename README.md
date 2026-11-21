@@ -1,415 +1,98 @@
+<picture>
+  <source media="(max-width: 600px)" srcset="./assets/hero-compact.svg">
+  <img src="./assets/hero.svg" width="100%" alt="Harshit Singh · Software engineer · Backend systems, AI and automation">
+</picture>
 
-<div align="center">
+# I follow the request all the way through.
 
-# 👋 Hi, I'm Harshit Singh
+I’m Harshit, a software engineer in Pune. I build the parts of a system you notice when something goes wrong. In my [HTTP load balancer](https://github.com/ashoka0402/Adaptive-L7-Load-Balancer), that means routing around a backend that still answers health checks but has started to slow down. In [Relay](https://github.com/ashoka0402/browser-automation), it means being able to open a failed browser step and see exactly what it did.
 
-### AI/ML Engineer | Systems Architect | Open Source Contributor
+Previously **AI Backend Engineering Intern at Ethara AI**. Finishing my **B.Tech in Computer Science at Bharati Vidyapeeth, Pune, in 2027**. Open to backend, AI systems and full-stack engineering roles.
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&pause=1000&color=00D9FF&center=true&vCenter=true&width=800&lines=Deep+Learning+%26+Computer+Vision+Enthusiast;Building+Production-Grade+ML+Systems;Distributed+Systems+%26+Microservices+Architect;Competitive+Programmer+%7C+Hackathon+Finalist" alt="Typing SVG" />
+[LinkedIn](https://www.linkedin.com/in/harshit-singh-a830b3285/) · [Email me](mailto:ashoka0402har@gmail.com) · [Engineering projects](#selected-engineering-work) · [What I’m building now](#on-my-workbench)
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=ashoka0402&label=Profile%20Views&color=00D9FF&style=for-the-badge" alt="Profile views" />
-  <img src="https://img.shields.io/github/followers/ashoka0402?label=Followers&style=for-the-badge&color=00D9FF" alt="followers" />
-  <img src="https://img.shields.io/github/stars/ashoka0402?label=Stars&style=for-the-badge&color=00D9FF" alt="stars" />
-</p>
+<img src="./assets/divider.svg" width="100%" alt="">
 
-</div>
+## Selected engineering work
 
----
-![Matrix SVG](https://raw.githubusercontent.com/rodrigograca31/rodrigograca31/master/matrix.svg)
-## 🎯 About Me
+### <img src="./assets/icons/route.svg" width="25" alt=""> Adaptive L7 Load Balancer
 
-```python
-class HarshitSingh:
-    def __init__(self):
-        self.role = "AI/ML Engineer & Systems Architect"
-        self.education = "B.Tech CSE @ BVDUCOE Pune (CGPA: 8.04)"
-        self.location = "Pune, Maharashtra, India"
-        self.current_focus = ["Deep Learning", "LLMs", "Distributed Systems"]
-        self.achievements = {
-            "hackathons": ["Smart India Hackathon 2024 Finalist",
-                          "PAN-IIT Imagine Hackathon 2025 Finalist"],
-            "competitive_programming": {
-                "codeforces": "1200+",
-                "leetcode": "1600+"
-            },
-            "open_source": "CERN HSF & GSoC-Affiliated Contributor"
-        }
-    
-    def get_current_work(self):
-        return [
-            " Contributing to CERN HSF scientific computing projects",
-            " Building LLM-powered automation systems",
-            " Researching advanced computer vision & NLP architectures",
-            " Designing high-performance distributed systems"
-        ]
-    
-    def get_expertise(self):
-        return {
-            "ai_ml": ["PyTorch", "TensorFlow", "Transformers", "OpenCV", "Scikit-learn"],
-            "backend": ["Node.js", "Next.js", "Microservices", "REST APIs", "WebSockets"],
-            "databases": ["MongoDB", "PostgreSQL", "Redis", "Firebase"],
-            "devops": ["Docker", "Linux", "Git", "CI/CD"],
-            "languages": ["Python", "C++", "JavaScript", "TypeScript", "Java"]
-        }
-```
+**Implemented and benchmarked** · Python, asyncio, aiohttp, Prometheus, Grafana
 
----
+A healthy server can still be the wrong place to send the next request. I built four routing policies into an asynchronous HTTP proxy. The adaptive policy weighs smoothed response time against active connections, so a fast backend becomes less attractive as it fills up. Connection pooling, backpressure and circuit breakers handle different ways the upstream pool can run out of capacity.
 
-##  Achievements & Recognition
+<img src="./assets/routing-example.svg" width="630" alt="Illustrative routing decision. Backend B wins despite its slower 15 ms latency because it has 5 active connections to A’s 50.">
 
-<div align="center">
+**4,970.93 requests/s · 8.25 ms median latency.** The repo documents this example against a local endpoint with 100 concurrent workers over 15 seconds.
 
-|  Achievement |  Impact |
-|:---|:---|
-| **Smart India Hackathon 2024** | 🥈 Finalist among 15,000+ teams nationwide |
-| **PAN-IIT Imagine Hackathon 2025** | 🥈 Finalist - Led cross-functional engineering team |
-| **Competitive Programming** | 💻 Codeforces 1200+ • LeetCode 1600+ • Regular Contests |
-| **Production Systems** | ⚡ Built systems processing 250+ jobs/day with 99% uptime |
+[Repository](https://github.com/ashoka0402/Adaptive-L7-Load-Balancer) · [Routing policy](https://github.com/ashoka0402/Adaptive-L7-Load-Balancer/blob/main/app/routing/latency_aware.py) · [Benchmark runner](https://github.com/ashoka0402/Adaptive-L7-Load-Balancer/blob/main/benchmarks/run_benchmarks.py)
 
-</div>
+### <img src="./assets/icons/workflow.svg" width="25" alt=""> Relay
 
----
+**Working browser automation platform** · Next.js, React Flow, Liveblocks, Trigger.dev, Stagehand, Steel
 
-## 🚀 Featured Projects
+Two people can edit the same workflow, then watch it drive a browser. I separated the collaborative canvas from the background runner. The runner orders nodes by dependency, passes structured output from one step to the next and records each step’s duration, result or error. That gives “the agent got stuck” a specific place to start debugging.
 
-### 🤖 [SaaS Automation Builder](https://github.com/ashoka0402) - Production AI Workflow Engine
-<img align="right" width="150" src="https://img.shields.io/badge/Status-Active-blue?style=for-the-badge"/>
+[Repository](https://github.com/ashoka0402/browser-automation) · [Workflow executor](https://github.com/ashoka0402/browser-automation/blob/main/features/workflows/tasks/run-workflow.ts)
 
-**Event-driven multi-tenant automation platform with LLM-powered workflow generation**
+### <img src="./assets/icons/forecast.svg" width="25" alt=""> Aeris
 
--  Processes **250+ automated jobs per day** with p99 latency <100ms
--  **LLM-assisted workflow creation** reducing manual setup time by 40%
--  Multi-tenant RBAC with PostgreSQL isolation across 15+ organizations
--  Fault-tolerant execution engine achieving **99% successful job completion**
--  Built with: `Next.js 14` `Bun` `Clerk Auth` `Neon Postgres` `OpenAI API` `Stripe`
+**Final-year project in development** · LightGBM, DuckDB, FastAPI, Next.js, MapLibre
 
-**Key ML Features:**
-- Natural language to workflow conversion using GPT-4
-- Intelligent error detection and auto-recovery suggestions
-- Predictive scheduling based on historical execution patterns
+A ward map can make an uncertain forecast look precise. I’m building a Pune and Delhi air-quality platform that combines station readings, weather and fire data, and shows a range for PM2.5 at **24, 48 and 72 hours**. After a model struggled with a seasonal shift, the project switched to predicting the change from a recent observation. A 30-day rolling-origin backtest compares forecasts with persistence and climatology. Evaluation to date covers **Delhi**. Pune validation is still open.
 
----
+[Repository](https://github.com/ashoka0402/final_year_project) · [Forecast model](https://github.com/ashoka0402/final_year_project/blob/main/vayu_core/forecast/model.py) · [Evaluation protocol](https://github.com/ashoka0402/final_year_project/blob/main/vayu_core/forecast/backtest.py)
 
-### 🔧 [MiniGit](https://github.com/ashoka0402) - ML-Enhanced Version Control System
-<img align="right" width="150" src="https://img.shields.io/badge/Status-Production-success?style=for-the-badge"/>
+### <img src="./assets/icons/review.svg" width="25" alt=""> PR Review Agent
 
-**Lightweight distributed VCS with AI-powered commit intelligence**
+**Implemented GitHub App** · Python, FastAPI, GitHub webhooks, Bandit, Radon
 
--  Manages **20K+ objects** with O(1) SHA-1 hash lookups
--  Zlib compression achieving **~35% storage reduction** via content deduplication
--  Commit DAG supporting efficient traversal over **6K+ commits**
--  **LLM-powered commit summarization** reducing manual effort by 40%
--  Built with: `C++` `File Systems` `DAGs` `NLP` `OpenAI API`
+I wanted an automated reviewer whose comments a developer could check against the diff. The app combines static checks with a model review, scores risk from the findings and posts feedback on the pull request. A security finding, a complex change and a large diff each contribute separately to that score.
 
-**ML Integration:**
-- Automatic commit message generation from code diffs
-- Semantic code change analysis using transformer models
-- Intelligent merge conflict prediction
+[Repository](https://github.com/ashoka0402/pr-review-agent) · [Risk scoring](https://github.com/ashoka0402/pr-review-agent/blob/main/app/review/scorer.py) · [Example review](https://github.com/ashoka0402/pr-review-agent/blob/main/docs/images/pr-review.png)
 
----
+### <img src="./assets/icons/shared.svg" width="25" alt=""> ONE / MANY
 
-###  [Distributed Rate Limiter](https://github.com/ashoka0402) - High-Performance Traffic Control
-<img align="right" width="150" src="https://img.shields.io/badge/Status-Production-success?style=for-the-badge"/>
+**Hackathon prototype** · Next.js, FastAPI, PostgreSQL, Gemini, PayPal Sandbox
 
-**Redis-backed rate limiting system with ML-based anomaly detection**
+Two people need a drill on different weekends. ONE / MANY matches their requests, splits a quote in exact cents and lets each person authorize a Sandbox contribution. Gemini extracts what each person needs. The server verifies payment captures for the contribution ledger, and a PostgreSQL exclusion constraint prevents overlapping bookings even if two members reserve at once.
 
--  Enforces limits on **4K+ requests/minute** with O(1) token bucket validation
--  Deployed across 3 microservices with **p99 overhead <7ms**
--  Blocks **80%+ burst traffic** during DDoS-like spikes
--  **ML-powered anomaly detection** for traffic pattern analysis
--  Built with: `Node.js` `Redis` `Distributed Systems` `TensorFlow`
+[Repository](https://github.com/ashoka0402/ONE-MANY) · [Booking constraint](https://github.com/ashoka0402/ONE-MANY/blob/main/apps/api/alembic/versions/20261112_05_asset_reservations.py) · [Passing CI run](https://github.com/ashoka0402/ONE-MANY/actions/runs/43170611672)
 
-**Advanced Features:**
-- Real-time traffic pattern learning using time-series analysis
-- Adaptive rate limiting based on historical request patterns
-- Automated threat detection with minimal false positives
+<img src="./assets/divider.svg" width="100%" alt="">
 
----
+## Experience and open source
 
-##  AI/ML Expertise
+- **Ethara AI · AI Backend Engineering Intern.** I built FastAPI services for annotation workflows, used YOLO to suggest labels, and moved annotation records from JSON into PostgreSQL so reviewed data could be exported for RLHF training.
+- **Lecture search · [YouTube Lecture RAG](https://github.com/ashoka0402/Youtube_Transcription_RAG).** I indexed **126 lecture transcripts** with faster-whisper, SentenceTransformers and Qdrant. Search results take a student to the second a concept was taught. Stable chunk IDs let me rerun ingestion without duplicating the index.
+- **Developer tools · [venvkill on PyPI](https://pypi.org/project/venvkill/).** I published a Python CLI that finds forgotten virtual environments and ranks them by size, age and condition. A dry run lets the developer inspect what would be removed.
+- **Scientific software · [A2rchi / archi fork](https://github.com/ashoka0402/archi).** I explored this research assistant through the HEP Software Foundation. My work focused on Chroma collection collisions and concurrent writes to JSON files.
+- **Hackathons.** I led **i-Vision**, one of five finalist teams for **SIH 2024 problem SIH1715**, and led a **PAN IIT Imagine Top 20** team. At SIH, our model failed shortly before judging. We split three alternatives across the team, tested them in parallel and had a working model to show. [Team announcement](https://www.linkedin.com/posts/harshit-singh-a830b3285_sih2024-smartindiahackathon-sihgrandfinale-activity-7263245291967946752-abu5)
 
-<div align="center">
+## Tools I reach for
 
-### Deep Learning & Neural Networks
-<img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
-<img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" />
-<img src="https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white" />
-<img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" />
+| Domain | Tools I’ve used in these systems |
+| --- | --- |
+| <img src="./assets/icons/code.svg" width="16" alt=""> Languages and APIs | Python, TypeScript, SQL, C++, FastAPI, asyncio |
+| <img src="./assets/icons/data.svg" width="16" alt=""> Models and data | LightGBM, YOLO, faster-whisper, SentenceTransformers, PostgreSQL, DuckDB, Qdrant |
+| <img src="./assets/icons/workflow.svg" width="16" alt=""> Interfaces and automation | Next.js, React Flow, MapLibre, Liveblocks, Trigger.dev, Stagehand |
+| <img src="./assets/icons/ops.svg" width="16" alt=""> Infrastructure and observability | Docker, AWS S3 and EC2, GitHub Actions, Prometheus, Grafana |
 
-### Computer Vision & NLP
-<img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" />
-<img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" />
-<img src="https://img.shields.io/badge/YOLO-00FFFF?style=for-the-badge&logo=yolo&logoColor=black" />
-<img src="https://img.shields.io/badge/Transformers-FF6F00?style=for-the-badge" />
+I also solve contest problems on [LeetCode](https://leetcode.com/u/harshitsingh04/) and [Codeforces](https://codeforces.com/profile/Harshitsingh04).
 
-### MLOps & Deployment
-<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
-<img src="https://img.shields.io/badge/MLflow-0194E2?style=for-the-badge&logo=mlflow&logoColor=white" />
-<img src="https://img.shields.io/badge/ONNX-005CED?style=for-the-badge&logo=onnx&logoColor=white" />
-<img src="https://img.shields.io/badge/TensorRT-76B900?style=for-the-badge&logo=nvidia&logoColor=white" />
+## On my workbench
 
-</div>
+**AI Group Friends** is a voice room for one person and four AI friends. I want to be able to interrupt one friend halfway through a sentence, address another by name and hear the right one pick up the thread. I’m prototyping turn-taking, cancellation of queued audio and the delay until the next voice starts.
 
----
+**How I work.** I like to write down what a user should observe when the system fails. For a shared booking, I can send two overlapping reservations at once and check whether both get through. For voice, the equivalent test is whether an interrupted speaker’s last few words still play. Those small tests tell me where the architecture needs work.
 
-##  Tech Stack
+<details>
+<summary><strong>Public pull-request activity</strong></summary>
 
-<details open>
-<summary><b>Languages</b></summary>
-<br>
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
-  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" />
-  <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white" />
-</p>
+[![Monthly counts of public pull requests opened by ashoka0402 over the six months shown](./assets/activity.svg)](https://github.com/search?q=is%3Apr+is%3Apublic+author%3Aashoka0402&type=pullrequests)
+
 </details>
 
-<details open>
-<summary><b>Backend & Systems</b></summary>
-<br>
-<p align="center">
-  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />
-  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" />
-  <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" />
-  <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" />
-  <img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
-  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
-  <img src="https://img.shields.io/badge/WebSockets-010101?style=for-the-badge" />
-</p>
-</details>
+<img src="./assets/divider.svg" width="100%" alt="">
 
-<details open>
-<summary><b>🗄️ Databases</b></summary>
-<br>
-<p align="center">
-  <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" />
-  <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" />
-  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
-  <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" />
-  <img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white" />
-</p>
-</details>
-
-<details open>
-<summary><b>Frontend & Tools</b></summary>
-<br>
-<p align="center">
-  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
-  <img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
-  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
-  <img src="https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D" />
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
-  <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" />
-</p>
-</details>
-
----
-
-##  Current Focus Areas
-
-<table align="center">
-<tr>
-<td align="center" width="50%">
-
-###  Deep Learning Research
-- Advanced transformer architectures
-- Computer vision for real-time systems
-- Neural architecture search (NAS)
-- Model compression & quantization
-- Transfer learning optimization
-
-</td>
-<td align="center" width="50%">
-
-###  Production ML Systems
-- LLM fine-tuning & deployment
-- Real-time inference optimization
-- MLOps pipeline automation
-- Distributed training systems
-- Edge AI & model optimization
-
-</td>
-</tr>
-</table>
-
----
-
-##  GitHub Analytics
-
-<div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=ashoka0402&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=00D9FF&icon_color=00D9FF&text_color=FFFFFF"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ashoka0402&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00D9FF&text_color=FFFFFF"/>
-</div>
-
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ashoka0402&theme=tokyonight&hide_border=true&background=0D1117&stroke=00D9FF&ring=00D9FF&fire=FF6B6B&currStreakLabel=00D9FF" alt="GitHub Streak" />
-</div>
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ashoka0402&theme=tokyo-night&hide_border=true&bg_color=0D1117&color=00D9FF&line=00D9FF&point=FFFFFF" alt="Contribution Graph" />
-</div>
-
----
-
-##  Coding Profiles & Achievements
-
-<div align="center">
-
-| Platform | Rating | Badge |
-|:---:|:---:|:---:|
-| **LeetCode** | 1600+ | <img src="https://img.shields.io/badge/LeetCode-1600+-FFA116?style=for-the-badge&logo=leetcode&logoColor=white" /> |
-| **Codeforces** | 1200+ | <img src="https://img.shields.io/badge/Codeforces-1200+-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white" /> |
-| **GitHub** | Active Contributor | <img src="https://img.shields.io/badge/Open%20Source-CERN%20HSF-00D9FF?style=for-the-badge&logo=github&logoColor=white" /> |
-
-</div>
-
----
-
-##  Education & Coursework
-
-<div align="center">
-
-** B.Tech in Computer Science & Engineering** • *Expected 2027*  
-**Bharati Vidyapeeth (DU) College of Engineering, Pune** • **CGPA: 8.04/10**
-
-</div>
-** Relevant Coursework:**
-- Data Structures & Algorithms • Computer Networks • Operating Systems
-- Database Management Systems • Software Engineering • Machine Learning
-- Computer Vision • Natural Language Processing • Distributed Systems
-
----
-
-##  Professional Experience
-
-###  Open Source Contributor – CERN HSF & GSoC-Affiliated Organizations
-**Remote** • *2025*
-
--  Contributing to CERN's High-Energy Physics software stack using **C++ and Python**
--  **10+ reviewed pull requests** merged across 50K+ LOC scientific computing codebases
--  Collaborating with international maintainers on performance optimization and feature development
--  Following CI/CD best practices with automated testing and code review workflows
--  Focus areas: Scientific computing, distributed systems, and performance-critical algorithms
-
----
-
-##  What I'm Currently Working On
-
-```javascript
-const currentProjects = {
-  learning: [
-    " Advanced PyTorch techniques for production ML",
-    " Large Language Model fine-tuning & optimization",
-    " React Native for cross-platform AI applications",
-    " Generative AI architectures (GANs, Diffusion Models)"
-  ],
-  building: [
-    " ISL (Indian Sign Language) Translation System using Computer Vision",
-    " Real-time object detection pipeline with YOLO & TensorRT",
-    " Custom transformer architecture for domain-specific NLP",
-    " Scalable microservices architecture with ML inference endpoints"
-  ],
-  contributing: [
-    " CERN HSF scientific computing projects",
-    " Open source ML libraries and frameworks",
-    " Technical documentation for AI/ML tools"
-  ]
-};
-```
-
----
-
-##  Highlighted Projects & Impact
-
-<div align="center">
-
-| Project | Technology Stack | Impact Metrics |
-|:---|:---|:---|
-| **SaaS Automation Platform** | Next.js, LLMs, PostgreSQL | 250+ jobs/day, 99% uptime |
-| **MiniGit VCS** | C++, NLP, File Systems | 20K+ objects, 35% storage saved |
-| **Rate Limiter Service** | Node.js, Redis | 4K+ req/min, <7ms p99 latency |
-| **ISL Translation** | PyTorch, OpenCV | Real-time inference at 30 FPS |
-
-</div>
-
----
-
-##  Let's Connect & Collaborate
-
-<div align="center">
-
-<a href="mailto:ashoka0402har@gmail.com">
-  <img src="https://img.shields.io/badge/Email-ashoka0402har@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
-</a>
-
-<a href="https://www.linkedin.com/in/harshit-singh-a830b3285/">
-  <img src="https://img.shields.io/badge/LinkedIn-Harshit%20Singh-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
-</a>
-
-<a href="https://github.com/ashoka0402">
-  <img src="https://img.shields.io/badge/GitHub-ashoka0402-181717?style=for-the-badge&logo=github&logoColor=white" />
-</a>
-
-<a href="https://leetcode.com/ashoka0402">
-  <img src="https://img.shields.io/badge/LeetCode-ashoka0402-FFA116?style=for-the-badge&logo=leetcode&logoColor=white" />
-</a>
-
-<a href="https://codeforces.com/profile/ashoka0402">
-  <img src="https://img.shields.io/badge/Codeforces-ashoka0402-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white" />
-</a>
-
-</div>
-
----
-
-##  Fun Facts
-
-<div align="center">
-
-```python
-fun_facts = {
-    "motto": "I'm a proud jack of all trades — on a mission to master them all",
-    "coding_style": "Clean, efficient, and well-documented",
-    "debug_method": "Rubber duck debugging + strategic print statements",
-    "favorite_tech": "Anything that makes systems faster and smarter",
-    "current_obsession": "Building AI that actually solves real problems",
-    "ask_me_about": ["OpenCV", "Matplotlib", "System Design", "Competitive Programming"]
-}
-```
-
-</div>
-
----
-
-##  GitHub Trophies
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=ashoka0402&theme=tokyonight&no-frame=true&no-bg=true&row=1&column=7" alt="GitHub Trophies" />
-</div>
-
----
-
-<div align="center">
-
-###  Quote I Live By
-
-<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Random Dev Quote"/>
-
----
-
-###  Quick Stats
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ashoka0402&theme=tokyonight" alt="Profile Summary" />
-
----
-
-** "Building the future, one algorithm at a time"**
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer&animation=twinkling" />
-
-</div>
+If your team builds backend infrastructure, AI tools or automation that people depend on, I’d be glad to walk through a design decision, a benchmark or a pull request together. [Get in touch](mailto:ashoka0402har@gmail.com) · [Connect on LinkedIn](https://www.linkedin.com/in/harshit-singh-a830b3285/)
